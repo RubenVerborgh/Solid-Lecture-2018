@@ -10,10 +10,29 @@ p.venue {
   --accent: #3a2d72;
 }
 
-#choice p {
-  margin-top: 1em;
+.intro.slide p {
+  margin-top: 1.5em;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.33em;
   line-height: 1.4;
   color: var(--accent);
+}
+
+.slide figure.cover.width.margin > :first-child {
+  width: 88%
+}
+.slide h2 + figure.cover.margin > :first-child {
+  margin-top: 2em;
+}
+.slide h2 + figure.cover.height.margin > :first-child {
+  height: 66%;
+}
+
+.slide h2.shout {
+  font-size: 3.2em;
+  line-height: 1.2;
+}
+
+.prefix {
+  opacity: .5;
 }

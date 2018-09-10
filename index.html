@@ -27,7 +27,7 @@
     <p class="affiliation">Ghent University – imec</p>
   </div>
 
-  <div class="slide" id="choice">
+  <div class="intro slide" id="choice">
     <p>
       Solid aims to give people back<br>
       their <em>choice</em> on the Web.
@@ -37,6 +37,19 @@
       whatever they want<br>
       with whomever they want,<br>
       while paying a fair price.
+    </p>
+  </div>
+
+  <div class="intro slide" id="overview">
+    <p>
+      The Solid ecosystem enables you<br>
+      to use the apps you need,
+      <span class="next">while<br> storing your data wherever you want.</span>
+    </p>
+    <p class="next">
+      You own your data,
+      <span class="next">and share it<br>
+      with the apps and people you choose.</span>
     </p>
   </div>
 
@@ -64,12 +77,189 @@
     </ul>
   </div>
 
+  <div class="slide" id="axis">
+    <h2>
+      Different platforms tackle decentralization<br>
+      at very different scales.
+    </h2>
+    <figure class="cover width margin">
+      <img src="images/decentralization-axis.svg" alt="">
+    </figure>
+  </div>
+
+  <div class="slide" id="decentralized-data">
+    <h2>
+      You can choose where you store<br>
+      every single piece of data you produce.
+    </h2>
+    <figure class="cover height margin">
+      <img src="images/decentralized-data.svg" alt="">
+    </figure>
+  </div>
+
+  <div class="slide" id="like">
+    <h2>
+      Every piece of data can link<br>
+      to any other piece of data.
+    </h2>
+    <pre><code><span class="prefix">PREFIX as: &lt;https://www.w3.org/ns/activitystreams#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
+
+&lt;#ruben-likes-dwebsummit&gt; a as:Like;
+  as:actor  <mark>&lt;https://ruben.verborgh.org/profile/#me&gt;</mark>;
+  as:object <mark>&lt;https://decentralizedweb.net/#2018&gt;</mark>;
+  as:published "2018-08-02T22:00:00Z"^^xsd:dateTime.</code></pre>
+  </div>
+
+  <div class="slide" id="views">
+    <h2>
+      You can grant apps and people access<br>
+      to very specific parts of your data.
+    </h2>
+    <figure class="cover height margin">
+      <img src="images/apps-as-views.svg" alt="">
+    </figure>
+  </div>
+
+  <div class="slide" id="markets">
+    <h2>
+      Separating app and storage competition<br>
+      drives permissionless innovation.
+    </h2>
+    <figure class="cover height margin">
+      <img src="images/data-and-app-markets.svg" alt="">
+    </figure>
+  </div>
+
+  <div class="slide" id="solid-logo">
+    <figure class="cover height">
+      <img src="images/solid-logo.svg" alt="[the Solid logo]" />
+    </figure>
+  </div>
+
+  <div class="slide" id="solid">
+    <h2>
+      Solid is an ecosystem of data and apps<br>
+      that work seamlessly together.
+    </h2>
+    <ul>
+      <li>
+        data pods
+        <ul class="inline next">
+          <li>profile</li>
+          <li>photos</li>
+          <li>comments</li>
+          <li>likes</li>
+          <li>…</li>
+        </ul>
+      </li>
+      <li>
+        applications
+        <ul class="inline next">
+          <li>photo album</li>
+          <li>meeting invites</li>
+          <li>document collaboration</li>
+          <li>…</li>
+        </ul>
+      </li>
+      <li>
+        standards
+        <ul class="inline next">
+          <li>HTTP</li>
+          <li>Linked Data</li>
+          <li>WebID</li>
+          <li>Web Access Control</li>
+          <li>OpenID Connect</li>
+          <li>…</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
   <div class="toc slide" id="toc-future">
     <ul>
       <li><a href="#toc-threats">Threats to the current Web</a></li>
       <li><a href="#toc-separation">Separating data from apps</a></li>
       <li class="current"><a href="#toc-future">The road ahead</a></li>
     </ul>
+  </div>
+
+  <div class="slide" id="past">
+    <h2>
+      The Solid server and several apps exist<br>
+      and are usable for developers.
+    </h2>
+    <ul>
+      <li>
+        <a href="https://github.com/solid/node-solid-server/">Solid server</a>
+        <ul class="next">
+          <li>store your data online with access control</li>
+          <li>
+            free storage at
+            <a href="https://solid.community/">solid.community</a>
+            and
+            <a href="https://inrupt.net/">inrupt.net</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        apps
+        <ul class="next inline">
+          <li><a href="https://github.com/linkeddata/mashlib">data browser</a></li>
+          <li>contacts</li>
+          <li>photos</li>
+          <li>meeting organizer</li>
+          <li>…</li>
+        </ul>
+      </li>
+      <li>
+        libraries
+        <ul class="next inline">
+          <li><a href="https://github.com/solid/solid-auth-client">authentication</a></li>
+          <li><a href="https://github.com/linkeddata/rdflib.js/">data processing</a></li>
+          <li>…</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="slide" id="present">
+    <h2>
+      Solid is transitioning from research project<br>
+      into an ecosystem backed by a start-up.
+    </h2>
+    <ul>
+      <li>
+        MIT has been our home
+        <ul>
+          <li>initial development of server and apps</li>
+        </ul>
+      </li>
+      <li class="next">
+        Inrupt is accelerating development
+        <ul>
+          <li class="next">open up the ecosystem for all</li>
+          <li class="next">maintain common building blocks as open source</li>
+          <li class="next">create tooling for developers</li>
+          <li class="next">offer services and apps</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="slide" id="future">
+    <h2>
+      We will bring the Solid experience<br>
+      to people all over the world.
+    </h2>
+    <dl>
+      <dt>September 2018</dt>
+      <dd class="next">more about Inrupt</dd>
+      <dt>early Fall 2018</dt>
+      <dd class="next">developer toolkit &amp; common UX</dd>
+      <dt>early 2019</dt>
+      <dd class="next">MVP of the ecosystem</dd>
+    </dl>
   </div>
 
   <div class="toc slide" id="recap">
