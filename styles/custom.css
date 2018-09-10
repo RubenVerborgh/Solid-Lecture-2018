@@ -5,3 +5,15 @@ p.venue {
   font-style: italic;
   margin-bottom: 1em;
 }
+
+.shower {
+  --accent: #3a2d72;
+}
+
+#choice p {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.4;
+  color: var(--accent);
+}
