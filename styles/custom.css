@@ -47,3 +47,20 @@ q {
 .prefix {
   opacity: .5;
 }
+
+blockquote {
+  margin-top: -21px;
+}
+blockquote p {
+  font-weight: bold;
+  font-style: italic;
+}
+
+img.faded {
+  opacity: .1;
+  filter: contrast(2);
+}
+
+figure.cover img {
+  z-index: -200 !important;
+}
