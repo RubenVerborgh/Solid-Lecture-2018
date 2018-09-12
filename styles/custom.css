@@ -43,6 +43,11 @@ q {
                -1.5px  1.5px 0 white,
                 1.5px  1.5px 0 white;
 }
+.dark.slide.cover h2 {
+  color: var(--accent);
+  box-shadow: 0 0 100px white;
+  background-color: rgba(255, 255, 255, .5);
+}
 
 .prefix {
   opacity: .5;
