@@ -33,6 +33,13 @@ p.venue {
   line-height: 1.2;
 }
 
+.slide.cover h2 {
+  text-shadow: -1.5px -1.5px 0 white,
+                1.5px -1.5px 0 white,
+               -1.5px  1.5px 0 white,
+                1.5px  1.5px 0 white;
+}
+
 .prefix {
   opacity: .5;
 }
