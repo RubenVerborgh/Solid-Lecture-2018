@@ -49,6 +49,11 @@ q {
   background-color: rgba(255, 255, 255, .5);
 }
 
+.slide pre {
+  font-size: .6em;
+  margin-left: 30px;
+}
+
 .prefix {
   opacity: .5;
 }
